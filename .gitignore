@@ -1,15 +1,17 @@
 # Dependencies
 node_modules/
+**/node_modules/
 
 # Next.js build output
-# Contains compiled server-side code, client bundles, and build traces
 .next/
+**/.next/
+out/
 
 # Auto-generated TypeScript declarations
-# Regenerated on every `next build`; must not be committed
 next-env.d.ts
+*.tsbuildinfo
 
-# Local review/debug artifacts (HTML captures used during development)
+# Local review/debug artifacts
 .review/
 
 # Environment variables — never commit these
@@ -19,13 +21,53 @@ next-env.d.ts
 .env.production
 .env.*.local
 
-# OS noise
-.DS_Store
-Thumbs.db
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+venv/
+**/venv/
+.venv/
+**/.venv/
 
-# Editor directories
+# Database
+*.db
+*.sqlite3
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.pytest_cache/
+.coverage
+
+# Docker (local overrides)
+docker-compose.override.yml
+
+# Secrets
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Logs
+*.log
+npm-debug.log*
+debug.log
+
+# Auto-generated
+next-env.d.ts
+
+# Review artifacts
+.review/

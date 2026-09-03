@@ -1,0 +1,6 @@
+# Gitleaks Config — AgentGuard
+# No custom rules needed; using default secret detection
+# False positives handled by .gitignore + manual review of .env.example
+
+[extend]
+useDefault = true
