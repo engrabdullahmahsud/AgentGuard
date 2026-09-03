@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+# Contains compiled server-side code, client bundles, and build traces
+.next/
+
+# Auto-generated TypeScript declarations
+# Regenerated on every `next build`; must not be committed
+next-env.d.ts
+
+# Local review/debug artifacts (HTML captures used during development)
+.review/
+
+# Environment variables — never commit these
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
